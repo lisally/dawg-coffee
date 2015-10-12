@@ -101,6 +101,15 @@ nav li a svg:hover {
     border-radius: 5px;
 
 }
+
+.menu #description {
+	font-style: italic;
+	text-indent: 1em;
+}
+
+.menu p {
+	font-size: 20px;
+}
 @media screen and (min-width: 768px) {
 	h2 {
 		text-align: center;
