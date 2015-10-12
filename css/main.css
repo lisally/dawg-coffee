@@ -33,9 +33,10 @@ h2 {
 }
 
 nav {
-	position: fixed;
+	position: absolute;
 	background-color: #181C22;	
-	width: 100%;	
+	width: 100%;
+	padding-top: 0.7em	
 }
 
 nav li {
