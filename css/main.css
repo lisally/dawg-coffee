@@ -1,1 +1,60 @@
 /* Your stylesheet goes here */
+/*
+<!-- CSS media query on a link element -->
+<link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
+
+<!-- CSS media query within a stylesheet -->
+<style>
+@media (max-width: 600px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
+*/
+
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,300");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,300italic");  
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+body {
+	font-family: "Lato", Helvetica Neue, Helvetica, Sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	background-color: #E9EAEE;
+}
+
+h1 { 
+	font-family: "Raleway", Helvetica Neue, Helvetica, Sans-serif;
+}
+
+h2 {
+	color: #BC6026;
+}
+
+nav {
+	position: absolute;
+	background-color: #181C22;
+	color: white;
+	font-size: 16px;
+	margin-left: 15px;
+	display: inline;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 20px;
+	}
+
+	h2 {
+		/*margin: auto;
+		width: 60%;*/
+		text-align: center;
+		padding: 1em;
+	}
+
+	nav {
+		background-color: rgba(24, 28, 34, 0.8);
+	}
+
+}
