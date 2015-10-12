@@ -1,16 +1,4 @@
-/* Your stylesheet goes here */
-/*
-<!-- CSS media query on a link element -->
-<link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
-
-<!-- CSS media query within a stylesheet -->
-<style>
-@media (max-width: 600px) {
-  .facet_sidebar {
-    display: none;
-  }
-}
-*/
+/* styling requirements are marked with: /**/ 
 
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,300");
@@ -18,189 +6,206 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 
 body {
-	font-family: "Lato", 'Helvetica Neue', Helvetica, Sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	background-color: #E9EAEE;
+	font-family: "Lato", 'Helvetica Neue', Helvetica, Sans-serif; /**/
+	font-size: 16px; /**/
+	font-weight: 300; /**/
+	background-color: #E9EAEE; /**/
 }
 
-h1 { 
-	font-family: "Raleway", 'Helvetica Neue', Helvetica, Sans-serif;
+h1, h2, h3, h5, h6 { 
+	font-family: "Raleway", 'Helvetica Neue', Helvetica, Sans-serif; /**/
 }
 
 h2 {
-	color: #BC6026;
+	color: #BC6026; /**/
 }
 
+svg {
+	height: 1em; /**/
+}
+
+/* navigation bar */
 nav {
-	position: absolute;
-	background-color: #181C22;	
+	position: absolute; /**/
+	background-color: #181C22; /**/
 	width: 100%;
-	padding-top: 0.7em	
+	padding-top: 0.3em	
 }
 
 nav li {
-	margin-left: 15px;	
-	display: inline;				
+	margin-left: 15px; /**/
+	display: inline; /**/		
 }
 
 nav li a {
-	color: white;
-	font-size: 16px;
-	padding: 0.5em;	
-	font-variant: small-caps;
+	color: white; /**/
+	font-size: 16px; /**/
+	padding: 0.5em;	/**/
+	font-variant: small-caps; /**/
 
 }
 
 nav li a:hover {
-	text-decoration: none;	
-	color: #D87E28;
+	text-decoration: none; /**/	
+	color: #D87E28; /**/
 }
 
 nav li a svg {
-	height: 1em;
-	fill: white;
+	height: 1em; /**/
+	fill: white; /**/
 }
 
 nav li a svg:hover {
-	fill: #D87E28;
+	fill: #D87E28; /**/
 }
 
+/* header */
 #header {
-	padding-top: 3em;
+	padding-top: 3em; /**/
 }
 
 #motto {
-	display: none;
+	display: none; /**/
+}
+
+/* headline */
+#headline {
+	font-style: italic; /**/
 }
 
 #headline svg {
-	display: none;
+	display: none; /**/
 }
 
-#headline {
-	font-style: italic;
-}
-
-#cafe {
-	background-color: #dbdce3;
+/* order */
+#order {
 	margin-top: 1em;
+	font-size: 20px;
+	text-indent: 2em;
 }
-#cafe p {
-	text-align: center;
+
+/* cafe information */
+#cafe {
+	background-color: #dbdce3; /**/
+	padding-top: 1.5em;
+	padding-bottom: 2em;
 }
 
 #cafe a {
 	text-decoration: none;
 }
+
 #cafe svg {
 	height: 1.5em;
-	fill: #D87E28;
-	margin-top: 1em;
+	fill: #D87E28; /**/
 }
 
 #cafe img {
-    border-radius: 5px;
+    border-radius: 5px; /**/
 
 }
 
+/* menu */
+#menu {
+	padding-left: 1em;
+}
 #menu #description {
-	font-style: italic;
-	text-indent: 1em;
+	font-style: italic; /**/
+	text-indent: 1em; /**/
 }
 
-#menu p {
-	font-size: 20px;
+#menu #options {
+	font-size: 24px;
 }
 
+/* story */
 #story {
-	background-color: #dbdce3;
+	background-color: #dbdce3; /**/
 }
+
 #story img {
-	max-height: 300px;
-	margin-left: 1em;
-	float: right;
-	border-radius: 5px;
+	float: right; /**/
+	max-height: 300px; /**/
+	margin-left: 1em; /**/
+	border-radius: 5px; /**/
 }
 
+/* footer */
 #footer {
-	border-top-width: 3px;
-	border-top-color: #D87E28;
-	background-color: #afb3c2;
-	padding: 1em;
-}
-
-#footer p {
-	font-size: 12px;
-}
-
-#order {
-	font-size: 20px;
-	text-indent: 2em;
+	border-top-width: 3px; /**/
+	border-style: solid; /**/
+	border-top-color: #D87E28; /**/
+	background-color: #afb3c2; /**/
+	font-size: 12px; /**/
+	padding: 1em; /**/
+	clear: both; /**/
 }
 
 @media screen and (min-width: 768px) {
+	body {
+		font-size: 20px; /**/
+	}
 	h2 {
-		text-align: center;
-		padding: 1em;
+		text-align: center; /**/
+		padding-bottom: 1em; /* margin or padding?*/
 	}
 
 	nav {	
-		background color: rgba(24, 28, 34, 0.8);		
+		background color: rgba(24, 28, 34, 0.8); /**/
 	}
 
 	nav li {
-		padding-left: 1em;
-		padding-right: 1em;				
+		padding-left: 1em; /**/
+		padding-right: 1em; /**/			
 	}
 
 	#header {
-		background-image: url(../img/background-sm.jpg); 
-		background-repeat: no-repeat;
-		background-size: cover;
-		min-height: 550px;
-		color: white;
-		text-align: right;
+		background-image: url(../img/background-sm.jpg); /**/
+		background-repeat: no-repeat; /**/
+		background-size: cover; /**/
+		color: white; /**/
+		text-align: right; /**/
+		min-height: 550px; /**/
 	}
 
 	#motto {
-		display: inline-block;
+		display: inline-block; /**/
 	}
 
 	#headline svg {
-		height: 1.5em;
-		display: inline-block;
-		margin-top: 1em;
-		margin-bottom: 1em;
+		display: inline-block; /**/
+		height: 1.5em; /**/
+		margin-top: 1em; /**/
+		margin-bottom: 1em; /**/
 		text-align: center;
 		fill: #D87E28;
 	}
 
 	#headline {
-		font-size: 1.25em;
-		text-align: center;
-		padding-top: 3em;
-		padding-bottom: 3em;
+		font-size: 1.25em; /**/
+		text-align: center; /**/
+		padding-top: 3em; /*padding or margin?*/
+		padding-bottom: 3em; /*padding or margin?*/
 	}
 
 	#footer #block2 {
-		text-align: right;
+		text-align: right; /**/
 	}
 
 }
 
 @media screen and (min-width: 992px) {
 	#header{
-		background-image: url(../img/background-md.jpg); 	
+		background-image: url(../img/background-md.jpg); /**/	
 	}
 
 	h1 {
-		font-size: 4em;
+		font-size: 4em; /**/
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	#header {
-		background-image: url(../img/background-lg.jpg);		
+		background-image: url(../img/background-lg.jpg); /**/		
 	}
 }
