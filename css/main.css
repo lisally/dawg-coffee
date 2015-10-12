@@ -32,7 +32,11 @@ h2 {
 	color: #BC6026;
 }
 
-nav {
+#motto {
+	display: none;
+}
+
+#navbar {
 	position: absolute;
 	background-color: #181C22;
 	color: white;
@@ -41,9 +45,29 @@ nav {
 	display: inline;
 }
 
-@media screen and (max-width: 768px) {
+.nav.navbar-nav{
+	padding: 0.5em;
+	font-variant: small-caps;
+	text-decoration: none;
+
+}
+
+a:hover {
+	color: #D87E28;
+}
+
+#navbar-header {
+	padding-top: 3em;
+}
+
+@media screen and (min-width: 768px) {
 	body {
 		font-size: 20px;
+	}
+
+	h1 {
+		color: white;
+		text-align: right;
 	}
 
 	h2 {
@@ -53,8 +77,32 @@ nav {
 		padding: 1em;
 	}
 
-	nav {
+	#navbar {
 		background-color: rgba(24, 28, 34, 0.8);
 	}
 
+	.nav.navbar-nav {
+		padding: 1em;
+	}
+
+	#navbar-header {
+		background:url(img/background-sm.jpg) no-repeat;
+		min-height: 550px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#navbar-header {
+		background:url(img/background-md.jpg) no-repeat;
+	}
+
+	h1 {
+		font-size: 4em;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#navbar-header {
+		background:url(img/background-lg.jpg);
+	}
 }
