@@ -18,82 +18,138 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 
 body {
-	font-family: "Lato", Helvetica Neue, Helvetica, Sans-serif;
+	font-family: "Lato", 'Helvetica Neue', Helvetica, Sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	background-color: #E9EAEE;
 }
 
 h1 { 
-	font-family: "Raleway", Helvetica Neue, Helvetica, Sans-serif;
+	font-family: "Raleway", 'Helvetica Neue', Helvetica, Sans-serif;
 }
 
 h2 {
 	color: #BC6026;
 }
 
+nav {
+	position: fixed;
+	background-color: #181C22;	
+	width: 100%;	
+}
+
+nav li {
+	margin-left: 15px;	
+	display: inline;				
+}
+
+nav li a {
+	color: white;
+	font-size: 16px;
+	padding: 0.5em;	
+	font-variant: small-caps;
+
+}
+
+nav li a:hover {
+	text-decoration: none;	
+	color: #D87E28;
+}
+
+nav li a svg {
+	height: 1em;
+	fill: white;
+}
+
+nav li a svg:hover {
+	fill: #D87E28;
+}
+
+#header {
+	padding-top: 3em;
+}
+
 #motto {
 	display: none;
 }
 
-#navbar {
-	position: absolute;
-	background-color: #181C22;
-	color: white;
-	font-size: 16px;
-	margin-left: 15px;
-	display: inline;
+#headline svg {
+	display: none;
 }
 
-.nav.navbar-nav{
-	padding: 0.5em;
-	font-variant: small-caps;
+#headline {
+	font-style: italic;
+}
+
+#information {
+	background-color: #dbdce3;
+}
+#information p {
+	text-align: center;
+}
+
+#information a {
 	text-decoration: none;
-
+}
+#information svg {
+	height: 1.5em;
+	fill: #D87E28;
+	margin-top: 1em;
 }
 
-a:hover {
-	color: #D87E28;
-}
+#information img {
+    border-radius: 5px;
 
-#navbar-header {
-	padding-top: 3em;
 }
-
 @media screen and (min-width: 768px) {
-	body {
-		font-size: 20px;
-	}
-
-	h1 {
-		color: white;
-		text-align: right;
-	}
-
 	h2 {
-		/*margin: auto;
-		width: 60%;*/
 		text-align: center;
 		padding: 1em;
 	}
 
-	#navbar {
-		background-color: rgba(24, 28, 34, 0.8);
+	nav {	
+		background color: rgba(24, 28, 34, 0.8);		
 	}
 
-	.nav.navbar-nav {
-		padding: 1em;
+	nav li {
+		padding-left: 1em;
+		padding-right: 1em;				
 	}
 
-	#navbar-header {
-		background:url(img/background-sm.jpg) no-repeat;
+	#header {
+		background-image: url(../img/background-sm.jpg); 
+		background-repeat: no-repeat;
+		background-size: cover;
 		min-height: 550px;
+		color: white;
+		text-align: right;
 	}
+
+	#motto {
+		display: inline-block;
+	}
+
+	#headline svg {
+		height: 1.5em;
+		display: inline-block;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		text-align: center;
+		fill: #D87E28;
+	}
+
+	#headline {
+		font-size: 1.25em;
+		text-align: center;
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+
 }
 
 @media screen and (min-width: 992px) {
-	#navbar-header {
-		background:url(img/background-md.jpg) no-repeat;
+	#header{
+		background-image: url(../img/background-md.jpg); 	
 	}
 
 	h1 {
@@ -102,7 +158,7 @@ a:hover {
 }
 
 @media screen and (min-width: 1200px) {
-	#navbar-header {
-		background:url(img/background-lg.jpg);
+	#header {
+		background-image: url(../img/background-lg.jpg);		
 	}
 }
