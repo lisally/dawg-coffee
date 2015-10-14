@@ -18,6 +18,7 @@ h1, h2, h3, h5, h6 {
 
 h2 {
 	color: #BC6026; /**/
+	font-weight: bold;
 }
 
 svg {
@@ -29,7 +30,8 @@ nav {
 	position: absolute; /**/
 	background-color: #181C22; /**/
 	width: 100%;
-	padding-top: 0.3em	
+	padding-top: 0.3em;	
+	white-space: nowrap
 }
 
 nav li {
@@ -39,10 +41,9 @@ nav li {
 
 nav li a {
 	color: white; /**/
-	font-size: 16px; /**/
 	padding: 0.5em;	/**/
 	font-variant: small-caps; /**/
-
+	font-size: 16px; /**/
 }
 
 nav li a:hover {
@@ -96,7 +97,7 @@ nav li a svg:hover {
 }
 
 #cafe svg {
-	height: 1.5em;
+	height: 2em;
 	fill: #D87E28; /**/
 }
 
@@ -133,7 +134,7 @@ nav li a svg:hover {
 /* footer */
 #footer {
 	border-top-width: 3px; /**/
-	border-style: solid; /**/
+	border-top-style: solid; /**/
 	border-top-color: #D87E28; /**/
 	background-color: #afb3c2; /**/
 	font-size: 12px; /**/
@@ -147,7 +148,7 @@ nav li a svg:hover {
 	}
 	h2 {
 		text-align: center; /**/
-		padding-bottom: 1em; /* margin or padding?*/
+		padding-bottom: 1em; /**/
 	}
 
 	nav {	
@@ -184,8 +185,8 @@ nav li a svg:hover {
 	#headline {
 		font-size: 1.25em; /**/
 		text-align: center; /**/
-		padding-top: 3em; /*padding or margin?*/
-		padding-bottom: 3em; /*padding or margin?*/
+		padding-top: 3em; /**/
+		padding-bottom: 3em; /**/
 	}
 
 	#footer #block2 {
