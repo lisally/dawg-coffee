@@ -12,8 +12,8 @@ This folder contains your submission for the [responsive challenge](http://facul
 > nope
 
 ##### 4. Approximately how many hours did it take you to complete this challenge? #####
-> 17hrs
+> 20 hrs
 
 ##### 5. Did you encounter any problems in this challenge we should warn students about in the future? How can we make the challenge better? #####
-> A lot of googling, not so much of a problem though!
+> A lot of small details and googling answers, not so much of a problem though!
 

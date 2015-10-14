@@ -1,4 +1,4 @@
-/* styling requirements are marked with: /**/ 
+/* challenge's styling requirements are marked with: /**/ 
 
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,300");
@@ -27,16 +27,17 @@ svg {
 
 /* navigation bar */
 nav {
-	position: absolute; /**/
+	position: fixed; /**/
 	background-color: #181C22; /**/
 	width: 100%;
 	padding-top: 0.3em;	
-	white-space: nowrap
+	/*white-space: nowrap;*/
+
 }
 
 nav li {
 	margin-left: 15px; /**/
-	display: inline; /**/		
+	display: inline-block; /**/		
 }
 
 nav li a {
